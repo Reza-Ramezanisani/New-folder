@@ -8,31 +8,33 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-   <div class="t w3-border">
-    <div class="tab w3-purple">
-        <button class="tablink w3-container w3-button w3-round-xxlarge" onmouseover="openCity(this,'city2','red')" >city2</button>
-        <button class="tablink w3-container w3-button w3-round-xxlarge" onmouseover="openCity(this,'city3','green')">city3</button>
-        <button class="tablink w3-container w3-button w3-round-xxlarge" id="def" onmouseover="openCity(this,'city1','gold')">city1</button>
+   <div class="nav" id="nav">
+       <a href="#" class="act w3-btn  w3-teal"><i class="fa fa-home"></i></a>
+       <a href="#" class="w3-deep-orange w3-button w3-hover-pale-blue "><i class="fa fa-search"></i></a>
+       <a href="#" class="w3-deep-orange w3-button w3-hover-pale-blue "><i class="fa fa-envelope"></i></a>
+       <a href="#" class="w3-deep-orange w3-button w3-hover-pale-blue "><i class="fa fa-trash"></i></a>
+       <a href="#" class="w3-deep-orange w3-button w3-hover-pale-blue "><i class="fa fa-user"></i></a>
+       <a href="#" href="javascript:void(0);" onclick="my()"
+       class="icon"><i class="fa fa-bars w3-btn "></i></a>
     </div>
-    
-        <div class="tabcontent  w3-border w3-border-lime w3-round-xlarge  w3-hover-shadow " id="city1">
-        <span class="w3-btn w3-display-topright w3-round-xxlarge" onclick="this.parentElement.style.display='none'">X</span>
-            <h3>city1</h3>
-        </div>
-        <div class="tabcontent  w3-border w3-border-lime w3-round-xlarge  w3-hover-shadow" id="city2">
-        <span class="w3-btn w3-display-topright w3-round-xxlarge" onclick="this.parentElement.style.display='none'">X</span>
-            <h3>city2</h3>
-        </div>
-        <div class="tabcontent  w3-border w3-border-lime w3-round-xlarge  w3-hover-shadow" id="city3">
-        <span class="w3-btn w3-display-topright w3-round-xxlarge" onclick="this.parentElement.style.display='none'">X</span>
-            <h3>city3</h3>
-        </div>
+
+
+
+
+
+
+
+
+
+
+
    
-   </div> 
     <script src="app.js"></script>
+
 </body>
 
 </html>

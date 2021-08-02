@@ -1,20 +1,14 @@
-var tabcontent=document.getElementsByClassName("tabcontent");
-var tablink=document.getElementsByClassName("tablink");
-
-function openCity(x,y,color) {
-    for (let i = 0; i < tabcontent.length; i++) {
-        
-        tabcontent[i].style.display="none";
+function my(){
+    var x=document.getElementById("nav");
+    if(x.className==='nav'){
+       var y= x.className+="res";
+      var f= console.log(x);
     }
-    for (let i = 0; i < tablink.length; i++) {
-         tablink[i].style.background="";
-        
+    else{
+       var r= x.className="nav";
     }
-    x.style.background=color;
-    document.getElementById(y).style.display="block";
+    
 }
-document.getElementById("def").click();
-
 
 
 

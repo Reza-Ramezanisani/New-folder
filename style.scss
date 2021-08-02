@@ -17,60 +17,39 @@ body,h1,h2,h3,h4,h5,h6{
     border: none;
     outline: none;
 }
-.tab{
-    display: flex;
-    flex-direction:column;
-    
-    width:30%;
-    
-    
-}
-
-
-.t{
-    display: flex;
-    flex-direction:row;
-    position: relative;
-    
-}
-.t .tabcontent{
-    display:none;
+.nav{
     overflow: hidden;
-    animation: fade 0.52s linear ;
-    position:relative;
-    width: 100%;
+    background:goldenrod;
+}
+.nav .icon{
+    display: none;
+}
+@media  screen and (max-width:600px) {
+    .nav a:not(:first-child){
+        display: none;
+    }
+    .nav a.icon{
+        display: block;
+        float: right;   
+    }
+}  
+@media  screen and (max-width:600px){
+    .navres a{
+        display: block;
+        
+        text-align: left;
+        position: relative;
 
-}
-.tablink{
-    transition: 0.8s;
-    @include btn;
-    float:none;
-    width:100%;
-    text-align: left;
-}
-@keyframes fade {
-    from{
-        opacity: 0.1;
+
+
     }
-    to{
-       opacity: 1;
+    .navres a.icon{
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
-.act{background: rgb(6, 216, 198);}
-span{
-    position: absolute;
-    
-    
-}
-#city1{
-    background:gold;
-    
-}
-#city2{
-    background: red;
-    
-}
-#city3{
-    background :green;
-    
-}
+
+
+
