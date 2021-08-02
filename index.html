@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="t w3-border">
+    <div class="tab w3-purple">
+        <button class="tablink w3-container w3-button w3-round-xxlarge" onmouseover="openCity(this,'city2','red')" >city2</button>
+        <button class="tablink w3-container w3-button w3-round-xxlarge" onmouseover="openCity(this,'city3','green')">city3</button>
+        <button class="tablink w3-container w3-button w3-round-xxlarge" id="def" onmouseover="openCity(this,'city1','gold')">city1</button>
+    </div>
+    
+        <div class="tabcontent  w3-border w3-border-lime w3-round-xlarge  w3-hover-shadow " id="city1">
+        <span class="w3-btn w3-display-topright w3-round-xxlarge" onclick="this.parentElement.style.display='none'">X</span>
+            <h3>city1</h3>
+        </div>
+        <div class="tabcontent  w3-border w3-border-lime w3-round-xlarge  w3-hover-shadow" id="city2">
+        <span class="w3-btn w3-display-topright w3-round-xxlarge" onclick="this.parentElement.style.display='none'">X</span>
+            <h3>city2</h3>
+        </div>
+        <div class="tabcontent  w3-border w3-border-lime w3-round-xlarge  w3-hover-shadow" id="city3">
+        <span class="w3-btn w3-display-topright w3-round-xxlarge" onclick="this.parentElement.style.display='none'">X</span>
+            <h3>city3</h3>
+        </div>
+   
+   </div> 
+    <script src="app.js"></script>
+</body>
+
+</html>

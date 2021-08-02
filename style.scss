@@ -1,0 +1,76 @@
+
+*{box-sizing: border-box;}
+
+body,html{
+    background:rgb(4, 188, 212);
+    
+    margin: 0;
+} 
+body,h1,h2,h3,h4,h5,h6{
+    font-family: Arial, Helvetica, sans-serif;
+}
+@mixin btn{
+    cursor: pointer;
+    padding: 18px;
+    float: left;
+    background: purple;
+    border: none;
+    outline: none;
+}
+.tab{
+    display: flex;
+    flex-direction:column;
+    
+    width:30%;
+    
+    
+}
+
+
+.t{
+    display: flex;
+    flex-direction:row;
+    position: relative;
+    
+}
+.t .tabcontent{
+    display:none;
+    overflow: hidden;
+    animation: fade 0.52s linear ;
+    position:relative;
+    width: 100%;
+
+}
+.tablink{
+    transition: 0.8s;
+    @include btn;
+    float:none;
+    width:100%;
+    text-align: left;
+}
+@keyframes fade {
+    from{
+        opacity: 0.1;
+    }
+    to{
+       opacity: 1;
+    }
+}
+.act{background: rgb(6, 216, 198);}
+span{
+    position: absolute;
+    
+    
+}
+#city1{
+    background:gold;
+    
+}
+#city2{
+    background: red;
+    
+}
+#city3{
+    background :green;
+    
+}
