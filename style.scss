@@ -3,7 +3,6 @@
 
 body,html{
     background:rgb(4, 188, 212);
-    
     margin: 0;
 } 
 body,h1,h2,h3,h4,h5,h6{
@@ -17,39 +16,37 @@ body,h1,h2,h3,h4,h5,h6{
     border: none;
     outline: none;
 }
-.nav{
+ul{
+    list-style:none;
+    padding: 0;
+    background: yellow;
     overflow: hidden;
-    background:goldenrod;
+    border: 1px solid #000;
+    margin-top: 0;
+    position: relative;
 }
-.nav .icon{
-    display: none;
+ul li {
+    float: left;
+    border: 1px solid #000;
 }
-@media  screen and (max-width:600px) {
-    .nav a:not(:first-child){
-        display: none;
-    }
-    .nav a.icon{
+ul li a{
+    border: 1px solid red;
+}
+input{
+    float: right;
+    margin-top: 4px;
+}
+.submit{
+    float: right;
+}
+@media screen and (max-width:600px){
+    ul li ,.submit{
         display: block;
-        float: right;   
+        float: none;
+        width: 100%;
     }
-}  
-@media  screen and (max-width:600px){
-    .navres a{
-        display: block;
-        
-        text-align: left;
-        position: relative;
-
-
-
-    }
-    .navres a.icon{
-        float: right;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
+    ul li a,input[type=text]{width: 100%;}
+   
+    
+   
 }
-
-
-

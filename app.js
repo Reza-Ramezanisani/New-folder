@@ -1,13 +1,18 @@
-function my(){
-    var x=document.getElementById("nav");
-    if(x.className==='nav'){
-       var y= x.className+="res";
-      var f= console.log(x);
-    }
-    else{
-       var r= x.className="nav";
-    }
+function my() {
+    var input,ul,li,a,i;
+    input=document.getElementById("mysearch").value.toUpperCase();
+    ul=document.getElementsByClassName("list")[0];
     
+    li=ul.getElementsByTagName("li");
+    for (let i = 0; i < li.length; i++) {
+         a= li[i].getElementsByTagName("a")[0];
+         if(a.innerText.toUpperCase().indexOf(input)>-1){
+             a.style.display="";
+         }
+        else{
+            a.style.display="none";
+        }
+    }
 }
 
 
