@@ -1,14 +1,10 @@
-var main=document.getElementById("main");
-var side=document.getElementById("side");
-function openside(){
-    side.style.width="100%";
-    main.style.marginLeft="0";
-
+function my() {
+    var x=document.getElementById("div");
+    if(x.className==="div"){
+        x.className+=" res";
+    }
+    else{
+        x.className="div";
+    }
+    
 }
-function closeside() {
-    main.style.marginLeft="0";
-    side.style.width='0%';
-}
-
-
-

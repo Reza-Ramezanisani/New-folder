@@ -5,6 +5,7 @@ body,html{
     background:rgb(4, 188, 212);
     margin: 0;
     height: 100%;
+   
 } 
 body,h1,h2,h3,h4,h5,h6{
     font-family: Arial, Helvetica, sans-serif;
@@ -22,57 +23,72 @@ body,h1,h2,h3,h4,h5,h6{
     padding:0;
     margin: 0;
 }
-ul{
-    display: flex;
-    flex-direction: column;
-    @include list;
-    overflow-x: hidden;
-    height:100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    width: 0%;
-    padding-top: 16px;
-    transition: 0.6s;
-    
-    z-index: 1;
-    border: 1px solid #000;
-}
-
-.li{
-    padding-top: 45px;
-    
-}
-ul li{
-    font-size: 26px;
-    border: 1px solid purple;
-    cursor: pointer;
-    width: 100%;
-    padding: 25px;
-    text-align: left;
-    transition: 0.5s;
-    text-align: center;
-
-}
-.close{
-    transition: .2s;
-}
-ul li:hover{
-    color:rgb(218, 13, 201)
-}
 .div{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    height: 50000px;
-    align-items: start;
+    
+   
+    background: pink;
+    padding: 15px;
+    overflow: auto;
+    width:100%;
+    position: fixed;
+    bottom: 0;
     
 }
-.main{
-    width: 100%;
-    align-self:stretch;
+
+.div a{
+    display:block;
+    color:gold;
+    padding: 12px 10px;
+    float:left;
+    width: calc(100%/7);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+
+}
+.div a:hover{
+    border-bottom: 1px solid rgb(255, 123, 0);
+}
+.div .icon{
+    display: none;
     
 }
 
+@media screen and (max-width:600px){
+    .div a:not(:first-child){
+        display: none;
+    }
+   .div a.icon{
+       display: block;
+        float: right;
+   }
+    
+}
+@media screen and (max-width:600px){
 
+    .div.res{
+        animation: fade 0.4s;
+    }
+    @keyframes fade {
+        from{
+            transform: scale(1.5) ;
+            opacity: 0.4;
 
+        }
+        to{
+            transform: scale(1);
+            opacity: 1;
+
+        }
+    }
+    .div.res a:not(.icon){
+        display: block;
+        float: none;
+        width: 100%;
+        
+
+    }
+    .icon{
+        position: absolute;
+        right: 0px;
+    }
+}
