@@ -12,15 +12,21 @@
 </head>
 
 <body>
-    <ul class=" w3-yellow  w3-left-align  w3-container list" >
-        <li><a href="#"  class="w3-deep-purple w3-btn w3-text-amber w3-hover-pink w3-round ">CSS</a></li>
-        <li><a href="#"  class="w3-deep-purple w3-btn w3-text-amber w3-hover-pink w3-round ">Java</a></li>
-        <li><a href="#"  class="w3-deep-purple w3-btn w3-text-amber w3-hover-pink w3-round ">HTML</a></li>
-        <li><a href="#"  class="w3-deep-purple w3-btn w3-text-amber w3-hover-pink w3-round ">Phyton</a></li>
-        <li><a href="#"  class="w3-deep-purple w3-btn w3-text-amber w3-hover-pink w3-round ">Schools</a></li>
-        <input type="text" id="mysearch" onkeyup="my()" class="w3-light-blue  w3-large ">
-        <li class="w3-deep-purple w3-btn w3-text-amber w3-hover-pink w3-round submit w3-margin-right">Submit</li>
-   </ul>
+    <div class="div">
+        <ul class="  w3-sand w3-text-teal" id="side">
+            <span class="close w3-text-red w3-btn w3-large w3-display-topright" onclick="closeside()"><i class="fa fa-close"></i></span>
+            <div class="li">
+            <li>link1</li>
+            <li>link2</li>
+            <li>link3</li>
+            <li>link4</li>
+            <li>link5</li>
+            </div>
+        </ul>
+        <div class="main w3-border-orange w3-border w3-round  w3-padding-small" id="main"><h2>this is main</h2></div>
+        <i class="fa fa-bars w3-text-red w3-btn w3-large" onclick="openside()"></i>
+    </div>
+    
 
 
 
